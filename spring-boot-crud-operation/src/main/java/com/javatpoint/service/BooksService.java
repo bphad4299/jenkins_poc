@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import com.javatpoint.model.Books;
 import com.javatpoint.repository.BooksRepository;
 
-//defining the business logic
 @Service
 public class BooksService {
 	@Autowired
@@ -16,7 +15,7 @@ public class BooksService {
 //getting all books record by using the method findaAll() of CrudRepository
 	public List<Books> getAllBooks() {
 		List<Books> books = new ArrayList<Books>();
-		booksRepository.findAll().forEach(books1 -> books.add(books1));
+		 booksRepository.findAll().forEach(books1 -> books.add(books1));
 		return books;
 	}
 
